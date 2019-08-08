@@ -15,12 +15,13 @@ function App() {
       <div className="App">
         <div>
           <Menu/>
+          </div>
           <Route exact path="/" component={Home} />
           <Route path="/computerScience" component={ComputerScience} />
           <Route path="/language" component={Language} />
           <Route path="/photos&design" component={Photos} />
           <Route path="/resume" component={Resume} />
-        </div>
+        
       </div>
     </BrowserRouter>
   );

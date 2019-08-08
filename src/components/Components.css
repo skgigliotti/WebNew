@@ -1,0 +1,18 @@
+.CircleBar {
+    position: fixed;
+    float: left;
+}
+
+h1{
+
+    position: relative;
+}
+
+p{
+
+    position: relative;
+}
+
+body{        
+    padding-top: 93px;
+}
