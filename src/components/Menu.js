@@ -7,7 +7,7 @@ function Circle(props){
 
     return(
       <div className="Circle">
-        <span class = "dotM">
+        <span className = "dotM">
           <div className="Label">
             {props.label}
           </div>

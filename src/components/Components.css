@@ -1,18 +1,42 @@
 .CircleBar {
     position: fixed;
     float: left;
+    width: 950px;
+    margin-left: -5vh;
 }
 
 h1{
 
     position: relative;
+    padding: 150px 5vh 0vh 5vh;
 }
 
 p{
 
     position: relative;
+    padding: 5vh 5vh 0vh 5vh;
 }
 
-body{        
-    padding-top: 93px;
+@media only screen and (max-width: 950px){
+
+    h1{
+
+        position: relative;
+        padding: 150px 5vh 0vh 200px;
+    }
+    
+    p{
+    
+        position: relative;
+        padding: 5vh 5vh 0vh 200px;
+    }
+
+    .CircleBar {
+        position: fixed;
+        float: left;
+        width: 50px;
+        margin-left: -5vh;
+
+    }
+
 }

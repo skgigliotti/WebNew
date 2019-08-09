@@ -12,10 +12,11 @@ import Resume from './components/Resume.js';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      
         <div>
           <Menu/>
           </div>
+          <div className="App">
           <Route exact path="/" component={Home} />
           <Route path="/computerScience" component={ComputerScience} />
           <Route path="/language" component={Language} />

@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="Home">
-      <body>
+      
         <h1>
           About Me
         </h1>
@@ -23,7 +23,6 @@ const Home = () => {
           When I am not programming or reading great Spanish literature, you'll find me running, taking photos,
           or knitting.
         </p>
-      </body>
       
     </div>
   );
