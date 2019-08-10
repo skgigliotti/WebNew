@@ -2,10 +2,11 @@ import React from 'react';
 
 const ComputerScience = () => {
   return (
-    <div className="Computer-science-all">
+    <div className="Page-all">
     <h1>Computer Science</h1>
     <div className="Computer-science">
       <div className="Cs-projects Text-background">
+      <h2>Projects</h2>
          <ul>
            <li><a href="https://gentle-woodland-96355.herokuapp.com/" target="_blank">Student Outreach Database (PSQL/PHP/HTML)</a> - used for Westmont College ministry teams to monitor participation</li>
            <li><a href="https://devpost.com/software/sbtrax-v486h7" target="_blank">SB Trax </a> - an Android app that provides helpful information about hiking in Santa Barbara and includes interactive safety features</li>
@@ -15,6 +16,7 @@ const ComputerScience = () => {
          </ul>
       </div>
       <div className="Text-background">
+        <h2>Experience</h2>
       <ul>
           <li>Git</li>
           <li>SQL</li>
@@ -26,6 +28,7 @@ const ComputerScience = () => {
       </div>
       
       <div className="Courses Text-background">
+      <h2>Courses</h2>
         <ul>
         <li>Introduction to Computer Science</li>
         <li>Discrete Mathematics</li>

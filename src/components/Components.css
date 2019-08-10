@@ -16,11 +16,21 @@
 
 }
 
-.Computer-science-all{
+.Page-all{
     transform: translateY(100px);
     padding: 5vh 5vh 0vh 10vh;
     margin:5vh;
     display: inline-block;
+}
+
+.Language{
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    
+    position: relative;
+
 }
 
 .Courses{
@@ -44,6 +54,11 @@ h1{
     position: relative;
 }
 
+h2{
+    padding: 0vh 0vh 0vh 2vh;
+    position: relative;
+}
+
 p{
 
     position: relative;
@@ -56,7 +71,7 @@ p{
 }
 
 @media only screen and (max-width: 950px){
-    .Computer-science-all{
+    .Page-all{
         transform: translateX(200px);
         padding: 5vh 5vh 0vh 10vh;
         margin:5vh;
