@@ -3,10 +3,11 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="Home">
-      
+        
         <h1>
           About Me
         </h1>
+        <div className="Text-background">
         <p>
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish
           and am always looking for ways to combine these two fields. I have a strong math background and professional experience
@@ -19,11 +20,12 @@ const Home = () => {
           about seeking justice through technology and otherwise.
         </p>
         
-        <p>
+        <p style={{padding:'5vh'}}>
           When I am not programming or reading great Spanish literature, you'll find me running, taking photos,
           or knitting.
         </p>
-      
+  
+      </div>
     </div>
   );
 }

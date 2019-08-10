@@ -17,6 +17,13 @@ p{
     padding: 5vh 5vh 0vh 5vh;
 }
 
+
+.Text-background {
+    background-color: #ddd3ee;
+    padding: 1vh;
+    margin: 5vh;
+}
+
 @media only screen and (max-width: 950px){
 
     h1{
