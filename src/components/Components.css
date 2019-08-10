@@ -6,6 +6,32 @@
     transform: translateY(10px);
 }
 
+.Computer-science{
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    
+    position: relative;
+
+}
+
+.Computer-science-all{
+    transform: translateY(100px);
+    padding: 5vh 5vh 0vh 10vh;
+    margin:5vh;
+    display: inline-block;
+}
+
+.Courses{
+    grid-row: 2/4; 
+}
+
+.Cs-projects{
+    grid-column: 1/3;
+
+}
+
 .Home{
     padding: 5vh 5vh 0vh 5vh;
     position: relative;
@@ -30,6 +56,12 @@ p{
 }
 
 @media only screen and (max-width: 950px){
+    .Computer-science-all{
+        transform: translateX(200px);
+        padding: 5vh 5vh 0vh 10vh;
+        margin:5vh;
+        display: inline-block;
+    }
     .Home{
         transform: translateX(200px);
         position: relative;
@@ -52,6 +84,15 @@ p{
         width: 50px;
         margin-left: -5vh;
 
+    }
+
+    .Computer-science{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1vh;
+      
+    
     }
 
 }
