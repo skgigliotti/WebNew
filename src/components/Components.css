@@ -3,39 +3,47 @@
     float: left;
     width: 950px;
     margin-left: -5vh;
+    transform: translateY(10px);
+}
+
+.Home{
+    padding: 5vh 5vh 0vh 5vh;
+    position: relative;
+    transform: translateY(100px);
+    margin: 5vh;
 }
 
 h1{
 
     position: relative;
-    padding: 150px 5vh 0vh 5vh;
 }
 
 p{
 
     position: relative;
-    padding: 5vh 5vh 0vh 5vh;
 }
 
 
 .Text-background {
     background-color: #ddd3ee;
     padding: 1vh;
-    margin: 5vh;
 }
 
 @media only screen and (max-width: 950px){
+    .Home{
+        transform: translateX(200px);
+        position: relative;
+    }
 
     h1{
 
         position: relative;
-        padding: 150px 5vh 0vh 200px;
     }
     
     p{
     
         position: relative;
-        padding: 5vh 5vh 0vh 200px;
+        
     }
 
     .CircleBar {

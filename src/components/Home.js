@@ -20,7 +20,7 @@ const Home = () => {
           about seeking justice through technology and otherwise.
         </p>
         
-        <p style={{padding:'5vh'}}>
+        <p style={{padding:'0vh 0vh 5vh 0vh'}}>
           When I am not programming or reading great Spanish literature, you'll find me running, taking photos,
           or knitting.
         </p>
