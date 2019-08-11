@@ -3,7 +3,7 @@
     float: left;
     width: 950px;
     margin-left: -5vh;
-    transform: translateY(10px);
+    transform: translateY(20px);
 }
 
 .Computer-science{
@@ -57,10 +57,12 @@
 }
 
 .Home{
-    padding: 5vh 5vh 0vh 5vh;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+    
     position: relative;
-    transform: translateY(100px);
-    margin: 5vh;
 }
 
 h1{

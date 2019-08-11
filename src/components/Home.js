@@ -2,12 +2,12 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div className="Page-all">
         
         <h1>
           About Me
         </h1>
-        <div className="Text-background">
+        <div className="Home Text-background">
         <p>
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish
           and am always looking for ways to combine these two fields. I have a strong math background and professional experience

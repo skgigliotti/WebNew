@@ -12,7 +12,9 @@ import Wander from './components/Wander.js';
 function App() {
   return (
     <BrowserRouter>
-      
+        <div className="Title">
+            Sophia Gigliotti
+          </div>
         <div>
           <Menu/>
           </div>

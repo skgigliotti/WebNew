@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from './Modal.js';
+import Lightbox from 'react-lightbox-component';
 
 
 import roses from '../photos/roses.jpg';
@@ -14,15 +15,16 @@ import face from '../photos/face2.jpg';
 import dandy from '../photos/dandy.jpg';
 import dante from '../photos/dante_city.jpg';
 import centro from '../photos/elcentro.jpg';
+import saginaw from '../photos/saginaw.jpg';
+import boston from '../photos/boston.jpg';
+import met from '../photos/met.jpg';
 
 const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
-  concentration, home, face, dante, centro, dandy];
+  concentration, saginaw, face, boston, centro, met, dante, home, dandy];
 
 
 
 function handleClick(e) {
-  
-  
 }
 
 function Photos  () {
