@@ -81,6 +81,8 @@ p{
 
 .Text-background {
     background-color: #ddd3ee;
+    border-color: rgb(93, 82, 187);
+    border-width: 2px;
     padding: 1vh;
 }
 

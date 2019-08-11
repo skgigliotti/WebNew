@@ -1,4 +1,7 @@
 import React from 'react';
+import Modal from './Modal.js';
+
+
 import roses from '../photos/roses.jpg';
 import concentration from '../photos/vincent2.jpg';
 import sunset from '../photos/sunset.jpg';
@@ -15,17 +18,24 @@ import centro from '../photos/elcentro.jpg';
 const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
   concentration, home, face, dante, centro, dandy];
 
+
+
 function handleClick(e) {
+  
   
 }
 
-const Photos = () => {
+function Photos  () {
+
+  
   
   return (
     <div className="Page-all">
+      
     <div className="Photos">
     {photos.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
     </div>
+    <Modal />
     </div>
   );
 }
