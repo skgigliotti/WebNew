@@ -12,26 +12,19 @@ import dandy from '../photos/dandy.jpg';
 import dante from '../photos/dante_city.jpg';
 import centro from '../photos/elcentro.jpg';
 
+const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
+  concentration, home, face, dante, centro, dandy];
+
+function handleClick(e) {
+  
+}
 
 const Photos = () => {
+  
   return (
     <div className="Page-all">
     <div className="Photos">
-      <img src={roses}/>
-      <img src={getty}/>
-      <img src={sunset}/>
-
-      <img src={kandinsky}/>
-      <img src={flamenco}/>
-      <img src={fascination}/>
-
-      <img src={concentration}/>
-      <img src={home}/>
-      <img src={face}/>
-
-      <img src={dante}/>
-      <img src={centro}/>
-      <img src={dandy}/>
+    {photos.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
     </div>
     </div>
   );
