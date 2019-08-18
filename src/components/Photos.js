@@ -27,18 +27,22 @@ const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
 function handleClick(e) {
 }
 
-function Photos  () {
+class Photos extends React.Component {
 
   
+  render(){
+    
+    return (
+      <div className="Page-all">
+        
+      <div className="Photos">
+      {photos.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
+      </div>
+      <Modal />
+      </div>
+    );
+    
+  }
   
-  return (
-    <div className="Page-all">
-      
-    <div className="Photos">
-    {photos.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
-    </div>
-    <Modal />
-    </div>
-  );
 }
 export default Photos

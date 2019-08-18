@@ -7,6 +7,7 @@ const Home = () => {
         <h1>
           About Me
         </h1>
+        
         <div className="Home Text-background">
         <p>
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish

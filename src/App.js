@@ -9,25 +9,32 @@ import Language from './components/Language.js';
 import Photos from './components/Photos.js';
 import Wander from './components/Wander.js';
 
-function App() {
-  return (
-    <BrowserRouter>
-        <div className="Title">
-            Sophia Gigliotti
-          </div>
-        <div>
-          <Menu/>
+
+
+
+class App extends React.Component {
+  render(){
+    return (
+   
+      <BrowserRouter>
+          <div className="Title">
+              Sophia Gigliotti
+            </div>
+          <div>
+            <Menu/>
           </div>
           <div className="App">
-          <Route exact path="/" component={Home} />
-          <Route path="/computerScience" component={ComputerScience} />
-          <Route path="/language" component={Language} />
-          <Route path="/photos&design" component={Photos} />
-          <Route path="/wander" component={Wander} />
-        
-      </div>
-    </BrowserRouter>
-  );
+            <Route exact path="/" component={Home} />
+            <Route path="/computerScience" component={ComputerScience} />
+            <Route path="/language" component={Language} />
+            <Route path="/photos&design" component={Photos} />
+            <Route path="/wander" component={Wander} />
+          </div>
+      </BrowserRouter>
+     
+    );
+  }
+  
 }
 
 export default App;
