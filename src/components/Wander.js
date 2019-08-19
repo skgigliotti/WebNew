@@ -1,7 +1,6 @@
 import React from 'react';
 import firebase from '../base.js';
 import {storage} from '../base.js';
-import met from '../photos/met.jpg';
 
 class Wander extends React.Component {
 
@@ -34,7 +33,8 @@ class Wander extends React.Component {
     if(this.state.title !== '' && this.state.story !== ''){
     const entry = {
       title: this.state.title,
-      story: this.state.story
+      story: this.state.story,
+      url: this.state.url
     }
     entryList.push(entry);
     this.setState({
@@ -54,11 +54,10 @@ class Wander extends React.Component {
   }
 
   handleUpload(e){
+    console.log(this.state.url);
     e.preventDefault();
-    console.log(e);
     
     const img = this.state.image;
-    console.log(img);
 
     if(img != null){
     
@@ -73,6 +72,7 @@ class Wander extends React.Component {
     () => {
       storage.ref('images').child(img.name).getDownloadURL().then(url => {
         this.setState({url});
+        console.log(this.state.url);
       })
     });
 }
@@ -88,8 +88,10 @@ class Wander extends React.Component {
           id: e,
           title: entries[e].title,
           story: entries[e].story,
+          url: entries[e].url
         });
       }
+      console.log(this.state.url);
       this.setState({
         entries: newState,
         image: null
@@ -121,9 +123,15 @@ class Wander extends React.Component {
         
           {this.state.entries.map((entry) =>{
             return (
-              <div className= "Posts Text-background-2">
+             <div>
+              <div className= "Posts">
                 <h1>{entry.title}</h1>
+                <div className="Wander">
+                <img alt="oops" src={entry.url}/>
                 {entry.story}
+              </div>
+              </div>
+              <hr/>
               </div>
             )
           })}
