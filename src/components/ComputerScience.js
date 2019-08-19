@@ -8,7 +8,7 @@ const ComputerScience = () => {
       <div className="Cs-projects Text-background">
       <h2>Projects</h2>
          <ul>
-           <li><a href="https://gentle-woodland-96355.herokuapp.com/" target="_blank">Student Outreach Database (PSQL/PHP/HTML)</a> - used for Westmont College ministry teams to monitor participation</li>
+           <li><a href="https://westmont-ministries-outreach.herokuapp.com/" target="_blank">Student Outreach Database (PSQL/PHP/HTML)</a> - used for Westmont College ministry teams to monitor participation</li>
            <li><a href="https://devpost.com/software/sbtrax-v486h7" target="_blank">SB Trax </a> - an Android app that provides helpful information about hiking in Santa Barbara and includes interactive safety features</li>
            <li>Evolutionary Algorithm (Java) - worked with a team of 15 students to create an algorithm that measures
          the fitness of a population over time</li>
