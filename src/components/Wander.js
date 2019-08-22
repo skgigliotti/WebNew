@@ -4,7 +4,7 @@ import {storage} from '../base.js';
 
 require('dotenv').config();
 
-const pass = process.env.WRITE_PASS;
+const pass = process.env.REACT_APP_WRITE_PASS;
 
 class Wander extends React.Component {
 
