@@ -71,7 +71,7 @@
 .Home{
     display: grid;
     grid-gap: 3vh;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 2fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     
     position: relative;
@@ -88,14 +88,18 @@ h2{
 }
 
 p{
-
+    font-size: 20px;
     position: relative;
+    padding: 2vh;
 }
 
+.Profile {
+    text-align: center;
+    margin: 2vh;
+}
 
 .Text-background {
-    background-color: #ddd3ee;
-    border-radius: 25px;
+    background-color: #dcdbde;
     box-shadow: 3px 5px #1a3a3a71;
     border-width: 2px;
     padding: 1vh;
@@ -118,15 +122,29 @@ p{
     
 }
 
-hr{
-}
+button {
+    background-color: #bbb; 
+    border: none;
+    color: white;
+    padding: 1vh 2vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3vh;
+  }
+
+  .Upload{
+      margin: 2vh;
+  }
 
 @media only screen and (max-width: 950px){
     .Page-all{
-        transform: translateX(200px);
+        transform: translateX(75px);
         padding: 5vh 5vh 0vh 10vh;
         margin:5vh;
         display: inline-block;
+        float: left;
     }
     .Home{
         transform: translateX(200px);
@@ -134,7 +152,6 @@ hr{
     }
 
     h1{
-
         position: relative;
     }
     

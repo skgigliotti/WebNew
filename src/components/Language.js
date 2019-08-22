@@ -18,7 +18,7 @@ const Language = () => {
     <h2>Cross Cultural Engagement</h2>
   <ul>
     <li>Weekly volunteer working with international students in Santa Barbara.
-      Fasciliate intercultural dialogue
+    Facilitate intercultural dialogue
     and help international students with conversational English.</li>
   
     <li>Au pair in Seville, Spain. Taught English to two young girls.

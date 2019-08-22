@@ -1,4 +1,5 @@
 import React from 'react';
+import profile from '../photos/profile.JPG';
 
 const Home = () => {
   return (
@@ -9,24 +10,31 @@ const Home = () => {
         </h1>
         
         <div className="Home Text-background">
+          <div>
         <p>
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish
-          and am always looking for ways to combine these two fields. I have a strong math background and professional experience
-          working with databases and Salesforce. I am currently working as an intern at EF Education First in 
-          Boston, MA. I get to work on improving and developing technology for student travelers.
-        </p>
-
-        <p>
+          and thrive in the crossover of these two fields. I am seeking opportunities to continue working in the field of education technology.
           I am commited to ethical computing and am passionate
-          about seeking justice through technology and otherwise.
+          about seeking justice and equality through technology and otherwise.</p>
+          
+          <p>Most recently, I worked as an intern at EF Education First in 
+          Boston, MA. At EF, I got to focus on improving and developing technology for student travelers.
+          I also have a strong math background and professional experience
+          working with databases and Salesforce. 
         </p>
         
-        <p style={{padding:'0vh 0vh 5vh 0vh'}}>
+        <p>
           When I am not programming or reading great Spanish literature, you'll find me running, taking photos,
           or knitting.
         </p>
+        </div>
+        <div className="Profile">
+      <img src={profile} style={{width: '75%'}} title="Here I am traveling in Portland, ME. Camera in hand as always!"/>
+      </div>
   
       </div>
+     
+      
     </div>
   );
 }

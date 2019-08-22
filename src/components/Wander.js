@@ -2,6 +2,8 @@ import React from 'react';
 import firebase from '../base.js';
 import {storage} from '../base.js';
 
+const pass = ;
+
 class Wander extends React.Component {
 
   constructor() {
@@ -11,10 +13,12 @@ class Wander extends React.Component {
       story: '',
       entries: [],
       image: null,
-      url: ''
+      url: '',
+      passcode:''
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.handlePassChange = this.handlePassChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this); 
     this.handleImgChange = this.handleImgChange.bind(this); 
     this.handleUpload = this.handleUpload.bind(this); 
@@ -45,12 +49,39 @@ class Wander extends React.Component {
 
   }
 
+  renderCreatePost(me){
+    if(me){
+      return(
+        <form onSubmit={this.handleSubmit}>
+        <div className="Text-background">
+        <div className= "Entry-title">
+        
+          <input type="text" name="title" placeholder="Título" cols="50" onChange={this.handleChange} value={this.state.title} />
+          </div>
+
+          <div className = "Entry-body">
+          <textarea name="story" placeholder="Historia del día" rows="25" cols="100" onChange={this.handleChange} value={this.state.story} />
+        </div>
+        <input type='file' className= "Upload" id='multi' onChange={this.handleImgChange} />
+        <button onClick={this.handleUpload}>Upload</button>
+        <button>Publicar</button>
+        </div>
+        
+        </form>
+      )
+    }
+  }
+
   handleImgChange(e){
-    console.log(e);
     if(e.target.files[0]){
       const img = e.target.files[0]; 
       this.setState({image: img});
     }
+  }
+
+  handlePassChange(e){
+    console.log(e);
+    this.setState({passcode: e.target.value});
   }
 
   handleUpload(e){
@@ -104,21 +135,9 @@ class Wander extends React.Component {
 
     return (
       <div className="Page-all">
-        <form onSubmit={this.handleSubmit}>
-        <div className="Text-background-2">
-        <div className= "Entry-title">
-        
-          <input type="text" name="title" placeholder="Título" cols="50" onChange={this.handleChange} value={this.state.title} />
-          </div>
-
-          <div className = "Entry-body">
-          <textarea name="story" placeholder="Historia del día" rows="25" cols="100" onChange={this.handleChange} value={this.state.story} />
-        </div>
-        <input type='file' id='multi' onChange={this.handleImgChange} />
-        <button onClick={this.handleUpload}>Upload</button>
-        </div>
-        <button>Publicar</button>
-        </form>
+        <p2>login</p2>
+        <input type='text' className= "Upload" onChange={this.handlePassChange} />
+        {this.renderCreatePost(this.state.passcode == pass)}
 
         
           {this.state.entries.map((entry) =>{
@@ -127,7 +146,7 @@ class Wander extends React.Component {
               <div className= "Posts">
                 <h1>{entry.title}</h1>
                 <div className="Wander">
-                <img alt="oops" src={entry.url}/>
+                <img alt="perdon, no hay nada aquí" src={entry.url}/>
                 {entry.story}
               </div>
               </div>
