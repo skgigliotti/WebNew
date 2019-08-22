@@ -10,7 +10,7 @@ const Home = () => {
         </h1>
         
         <div className="Home Text-background">
-          <div>
+        <div>
         <p>
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish
           and thrive in the crossover of these two fields. I am seeking opportunities to continue working in the field of education technology.
