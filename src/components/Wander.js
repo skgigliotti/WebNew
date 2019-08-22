@@ -2,7 +2,7 @@ import React from 'react';
 import firebase from '../base.js';
 import {storage} from '../base.js';
 
-const pass = ;
+const pass = process.env.WRITE_PASS;
 
 class Wander extends React.Component {
 
