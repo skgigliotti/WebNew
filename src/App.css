@@ -67,6 +67,10 @@
 
 }
 
+.dotM:hover {
+  color: rgb(85, 76, 85);
+}
+
 .dotM {
   margin: 0px 0px 0px 100px;
   height: 90px;
