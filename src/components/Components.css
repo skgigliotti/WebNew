@@ -138,6 +138,10 @@ button {
       margin: 2vh;
   }
 
+  .Wander{
+    line-height: 22px;
+  }
+
 @media only screen and (max-width: 950px){
     .Page-all{
         transform: translateX(75px);
