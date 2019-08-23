@@ -137,9 +137,10 @@ class Wander extends React.Component {
 
     return (
       <div className="Page-all">
-        <p2>login</p2>
+        
         <h1>Wonder | Wander</h1>
         <p>Bienvenidos! Here I will attempt to reflect on my travel experiences and share some of my favorite photos.</p>
+        <p2>login</p2>
         <input type='text' className= "Upload" onChange={this.handlePassChange} />
         {this.renderCreatePost(this.state.passcode == pass)}
 
