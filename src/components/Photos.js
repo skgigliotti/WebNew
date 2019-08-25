@@ -18,9 +18,10 @@ import centro from '../photos/elcentro.jpg';
 import saginaw from '../photos/saginaw.jpg';
 import boston from '../photos/boston.jpg';
 import met from '../photos/met.jpg';
+import self from '../photos/selfport.jpg';
 
 const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
-  concentration, saginaw, face, boston, centro, met, dante, home, dandy];
+  concentration, saginaw, face, boston, centro, met, self, dante, home, dandy];
 
 
 
