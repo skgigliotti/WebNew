@@ -26,6 +26,8 @@ const ComputerScience = () => {
           <li>OpenGL</li>
         </ul>
       </div>
+
+      <a href="https://github.com/skgigliotti" target="_blank"><img src={github}/></a>
       
       <div className="Courses Text-background">
       <h2>Courses</h2>
@@ -47,7 +49,7 @@ const ComputerScience = () => {
       </ul>
       </div>
     </div>
-    <a href="https://github.com/skgigliotti" target="_blank"><img src={github}/></a>
+    
     </div>
   );
 }
