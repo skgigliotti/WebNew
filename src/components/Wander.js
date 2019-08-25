@@ -121,10 +121,10 @@ class Wander extends React.Component {
           id: e,
           title: entries[e].title,
           story: entries[e].story,
-          url: entries[e].url
+          url: entries[e].url,
+          date: Date.now()
         });
       }
-      console.log(this.state.url);
       this.setState({
         entries: newState,
         image: null
@@ -150,6 +150,7 @@ class Wander extends React.Component {
              <div>
               <div className= "Posts">
                 <h2>{entry.title}</h2>
+                <p>{entry.date}</p>
                 <div className="Wander">
                 <img alt="perdon, no hay nada aquí" src={entry.url}/>
                 {entry.story}
