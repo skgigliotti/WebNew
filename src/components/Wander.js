@@ -94,7 +94,6 @@ class Wander extends React.Component {
 
     if(img != null){
     
-    console.log(img.name);
     const imgUpload = storage.ref('images/'+ img.name).put(img);
     imgUpload.on('state_changed', 
     (snapshot) => {
@@ -105,7 +104,6 @@ class Wander extends React.Component {
     () => {
       storage.ref('images').child(img.name).getDownloadURL().then(url => {
         this.setState({url});
-        console.log(this.state.url);
       })
     });
 }

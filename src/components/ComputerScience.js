@@ -1,5 +1,5 @@
 import React from 'react';
-
+import github from '../photos/github.svg'
 const ComputerScience = () => {
   return (
     <div className="Page-all">
@@ -47,6 +47,7 @@ const ComputerScience = () => {
       </ul>
       </div>
     </div>
+    <a href="https://github.com/skgigliotti" target="_blank"><img src={github}/></a>
     </div>
   );
 }
