@@ -27,7 +27,8 @@ const ComputerScience = () => {
         </ul>
       </div>
 
-      <a href="https://github.com/skgigliotti" target="_blank"><img src={github}/></a>
+      <a href="https://github.com/skgigliotti" target="_blank"><img src={github} style={{width: "25vh",
+    float: "right"}}/></a>
       
       <div className="Courses Text-background">
       <h2>Courses</h2>
