@@ -1,6 +1,16 @@
 import React from 'react';
+import firebase from '../base.js';
 
 const Language = () => {
+  const writing = '';
+  const sample = firebase.database().ref('sample');
+  sample.on('value', (snapshot) => {
+    console.log(sample);
+    let sampleWriting = snapshot.val();
+    console.log(sampleWriting);
+    writing = sampleWriting[0]
+  }
+      );
   return (
     <div className="Page-all">
       <h1>Language</h1>
@@ -27,6 +37,10 @@ const Language = () => {
 
   </ul>
     
+  </div>
+  <div className="Text-background">
+    <h2>Por ejemplo...</h2>
+  <p>{writing}</p>
   </div>
       </div>
     </div>
