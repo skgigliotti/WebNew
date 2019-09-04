@@ -7,8 +7,9 @@ const Language = () => {
   sample.on('value', (snapshot) => {
     console.log(sample);
     let sampleWriting = snapshot.val();
-    console.log(sampleWriting);
+    console.log(sampleWriting.sor_juana);
     writing = sampleWriting.sor_juana;
+    console.log(writing);
   }
       );
   return (
