@@ -5,11 +5,9 @@ const Language = () => {
   var writing = '';
   const sample = firebase.database().ref('sample');
   sample.on('value', (snapshot) => {
-    console.log(sample);
+    
     let sampleWriting = snapshot.val();
-    console.log(sampleWriting.sor_juana);
     writing = sampleWriting.sor_juana;
-    console.log(writing);
   }
       );
   return (

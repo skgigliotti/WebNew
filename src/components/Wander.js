@@ -82,7 +82,6 @@ class Wander extends React.Component {
   }
 
   handlePassChange(e){
-    console.log(e);
     this.setState({passcode: e.target.value});
   }
 
