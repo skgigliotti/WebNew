@@ -39,7 +39,7 @@ const Language = () => {
   </ul>
     
   </div>
-  <div className="Text-background">
+  <div className="Text-background Example">
     <h2>Por ejemplo...</h2>
   <p>{writing}</p>
   </div>

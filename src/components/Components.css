@@ -54,6 +54,11 @@
 
 }
 
+.Example{
+    grid-column: 1/3;
+
+}
+
 .Posts{
     display: grid;
     grid-gap: 3vh;
