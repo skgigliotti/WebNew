@@ -18,7 +18,7 @@ import saginaw from '../photos/saginaw.jpg';
 import boston from '../photos/boston.jpg';
 import met from '../photos/met.jpg';
 import self from '../photos/selfport.jpg';
-import pom from '../photos/flor.jpg';
+import pom from '../photos/pom.jpg';
 import corgui from '../photos/corgui.jpg';
 import flor from '../photos/flor.jpg';
 
