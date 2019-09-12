@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from './Modal.js';
-import Lightbox from 'react-lightbox-component';
 
 
 import roses from '../photos/roses.jpg';
@@ -19,9 +18,12 @@ import saginaw from '../photos/saginaw.jpg';
 import boston from '../photos/boston.jpg';
 import met from '../photos/met.jpg';
 import self from '../photos/selfport.jpg';
+import pom from '../photos/flor.jpg';
+import corgui from '../photos/corgui.jpg';
+import flor from '../photos/flor.jpg';
 
 const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
-  concentration, saginaw, face, boston, centro, met, self, dante, home, dandy];
+  concentration, saginaw, face, boston, centro, met, pom, corgui, flor, self, dante, home, dandy];
 
 
 

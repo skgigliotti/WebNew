@@ -13,7 +13,7 @@ const Home = () => {
         <div>
         <p>
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish
-          and thrive in the crossover of these two fields. I am seeking opportunities to continue working in the field of education technology.
+          and enjoy the crossover of these two fields. I am seeking opportunities to continue working in the field of education technology.
           I am commited to ethical computing and am passionate
           about seeking justice and equality through technology and otherwise.</p>
           
