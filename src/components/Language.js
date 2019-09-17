@@ -50,6 +50,7 @@ class Language extends React.Component {
     </div>
     <div className="Text-background Example">
       <h2>Por ejemplo...</h2>
+      <h1>En caunto a Sor Juana Inés de La Cruz</h1>
     <p>{this.state.writing}</p>
     </div>
         </div>
