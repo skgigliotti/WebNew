@@ -43,6 +43,8 @@ class Language extends React.Component {
     <div className="Text-background">
       <h2>Cross Cultural Engagement</h2>
     <ul>
+      <li>Currently studying abroad in Mexico. Improving ability to converse fluently in Spanish. 
+        Learning about Mexican culture.</li>
       <li>Weekly volunteer working with international students in Santa Barbara.
       Facilitate intercultural dialogue
       and help international students with conversational English.</li>
