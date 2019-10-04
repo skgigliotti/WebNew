@@ -32,6 +32,12 @@ class Language extends React.Component {
       <li>Latin American Cultures </li>
       <li>Introduction to Hispanic Literature</li>
       <li>The Cradle of Magic Realism</li>
+      <li>Literary Translation</li>
+      <li>History of Mexico</li>
+      <li>Mexican Literature</li>
+      <li>Advanced Spanish Conversation</li>
+      <li>Engaging and Understanding Cultures</li>
+      <li>Latin Dance</li>
     </ul>
     </div>
     <div className="Text-background">
