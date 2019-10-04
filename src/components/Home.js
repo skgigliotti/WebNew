@@ -15,7 +15,7 @@ const Home = () => {
           I am a senior at Westmont College in Santa Barbara, CA. I study Computer Science and Spanish
           and enjoy the crossover of these two fields. I am seeking opportunities to continue working in the field of education technology.
           I am commited to ethical computing and am passionate
-          about seeking justice and equality through technology and otherwise.</p>
+          about seeking justice and equity through technology and otherwise.</p>
           
           <p>Most recently, I worked as an intern at EF Education First in 
           Boston, MA. At EF, I got to focus on improving and developing technology for student travelers.
