@@ -16,6 +16,7 @@ import dante from '../photos/dante_city.jpg';
 import centro from '../photos/elcentro.jpg';
 import saginaw from '../photos/saginaw.jpg';
 import boston from '../photos/boston.jpg';
+import sierra from '../photos/sierra.jpg';
 import met from '../photos/met.jpg';
 import self from '../photos/selfport.jpg';
 import pom from '../photos/pom.jpg';
@@ -23,7 +24,7 @@ import corgui from '../photos/corgui.jpg';
 import flor from '../photos/flor.jpg';
 
 const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
-  concentration, saginaw, face, boston, centro, met, pom, corgui, flor, self, dante, home, dandy];
+  concentration, saginaw, face, sierra, centro, met, pom, corgui, flor, boston, self, dante, home, dandy];
 
 
 
