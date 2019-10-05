@@ -24,7 +24,7 @@ import corgui from '../photos/corgui.jpg';
 import flor from '../photos/flor.jpg';
 
 const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
-  concentration, saginaw, face, sierra, centro, met, pom, corgui, flor, boston, self, dante, home, dandy];
+  concentration, saginaw, face, sierra, centro, met, pom, corgui, flor, boston, dante, home, self, dandy];
 
 
 
