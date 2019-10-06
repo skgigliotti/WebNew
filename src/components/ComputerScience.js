@@ -27,10 +27,14 @@ const ComputerScience = () => {
           <li>OpenGL</li>
         </ul>
       </div>
+      
+      <div>
       <a href="https://www.linkedin.com/in/sophia-gigliotti/" target="_blank"><img src={lin} style={{width: "25vh",
     float: "right"}}/></a>
       <a href="https://github.com/skgigliotti" target="_blank"><img src={github} style={{width: "25vh",
     float: "right"}}/></a>
+      </div>
+      
       
       <div className="Courses Text-background">
       <h2>Courses</h2>
