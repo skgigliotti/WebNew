@@ -1,5 +1,6 @@
 import React from 'react';
 import github from '../photos/github.svg'
+import lin from '../photos/lin.svg'
 const ComputerScience = () => {
   return (
     <div className="Page-all">
@@ -26,7 +27,8 @@ const ComputerScience = () => {
           <li>OpenGL</li>
         </ul>
       </div>
-
+      <a href="https://www.linkedin.com/in/sophia-gigliotti/" target="_blank"><img src={lin} style={{width: "25vh",
+    float: "right"}}/></a>
       <a href="https://github.com/skgigliotti" target="_blank"><img src={github} style={{width: "25vh",
     float: "right"}}/></a>
       
