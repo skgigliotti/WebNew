@@ -1,6 +1,6 @@
 import React from 'react';
 import github from '../photos/github.svg'
-import lin from '../photos/lin.svg'
+import lin from '../photos/lin.png'
 const ComputerScience = () => {
   return (
     <div className="Page-all">
