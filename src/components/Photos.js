@@ -27,12 +27,10 @@ class Photos extends React.Component {
     var ref = db.ref("/gallery");
 
     // Attach an asynchronous callback to read the data at our posts reference
-    ref.on("value", function(snapshot) {
-    console.log(snapshot.val());
-    }, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
-    });
-    
+    ref.listAll().then(function(res) {
+      console.log(res.items)
+      console.log(res)
+    })
    }
   
   render(){
