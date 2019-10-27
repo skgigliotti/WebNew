@@ -25,7 +25,7 @@ class Photos extends React.Component {
     var admin = require("firebase-admin");
 
     // Get a database reference to our posts
-    var db = admin.database();
+    var db = firebase.database();
     var ref = db.ref("storage/gallery");
 
     // Attach an asynchronous callback to read the data at our posts reference
