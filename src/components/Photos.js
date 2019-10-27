@@ -18,10 +18,9 @@ class Photos extends React.Component {
       images: []
       
     }
-    this.componentDidMount = this.componentDidMount.bind(this); 
+    this.getImages = this.getImages.bind(this); 
   }
-
-  componentDidMount() { 
+  getImages(){
 
     // Get a database reference to our posts
     var db = firebase.storage();
@@ -32,6 +31,10 @@ class Photos extends React.Component {
       this.setState({
         images: res.items})
     })
+  }
+
+  componentDidMount() { 
+    this.getImages();
    }
   
   render(){
