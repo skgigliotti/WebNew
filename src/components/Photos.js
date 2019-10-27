@@ -34,12 +34,12 @@ class Photos extends React.Component {
   }
 
   componentDidMount() { 
-    this.getImages();
+    
    }
   
   render(){
           
-    
+    this.getImages();
 
     return (
       <div className="Page-all">
