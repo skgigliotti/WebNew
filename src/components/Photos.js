@@ -24,7 +24,7 @@ class Photos extends React.Component {
 
     // Get a database reference to our posts
     var db = firebase.database();
-    var ref = db.ref("storage/gallery");
+    var ref = db.ref("/gallery");
 
     // Attach an asynchronous callback to read the data at our posts reference
     ref.on("value", function(snapshot) {
