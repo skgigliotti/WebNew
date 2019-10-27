@@ -105,9 +105,11 @@ p{
 
 .Text-background {
     background-color: #dcdbde;
-    box-shadow: 3px 5px #1a3a3a71;
-    border-width: 2px;
-    padding: 1vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
 }
 
 .Text-background-2 {
