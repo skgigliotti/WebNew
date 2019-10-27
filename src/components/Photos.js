@@ -28,8 +28,8 @@ class Photos extends React.Component {
 
     // Attach an asynchronous callback to read the data at our posts reference
     ref.listAll().then(function(res) {
-      console.log(res.items)
-      console.log(res)
+      this.setState({
+        images: res.items})
     })
    }
   
