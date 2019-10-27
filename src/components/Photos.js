@@ -21,8 +21,6 @@ class Photos extends React.Component {
   }
 
   componentDidMount() { 
-    // Import Admin SDK
-    var admin = require("firebase-admin");
 
     // Get a database reference to our posts
     var db = firebase.database();
