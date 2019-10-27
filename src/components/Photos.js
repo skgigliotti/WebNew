@@ -31,10 +31,12 @@ class Photos extends React.Component {
       this.setState({
         images: res.items})
     })
+    
   }
 
   componentDidMount() { 
     this.getImages();
+    console.log(this.state.images);
    }
   
   render(){
@@ -45,7 +47,7 @@ class Photos extends React.Component {
       <div className="Page-all">
         
       <div className="Photos">
-      {this.state.images.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
+      {this.state.images.map((p) => (<img src={p.url} alt={p} onClick={handleClick}/>))}
       </div>
       <Modal />
       </div>
