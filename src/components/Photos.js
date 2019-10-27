@@ -27,7 +27,7 @@ class Photos extends React.Component {
     var ref = db.ref("/gallery");
 
     // Attach an asynchronous callback to read the data at our posts reference
-    ref.listAll().then(function(res) {
+    ref.listAll().then((res) => {
       this.setState({
         images: res.items})
     })
