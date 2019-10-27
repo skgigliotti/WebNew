@@ -48,7 +48,10 @@ class Photos extends React.Component {
       <div className="Page-all">
         
       <div className="Photos">
-      {this.state.images.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
+      {this.state.images.map((p) => (<img src={p.getDownloadURL} alt={p} onClick={handleClick}/>))}
+      </div>
+      <div className="Photos">
+      {this.state.images.map((p) => (<img src={p.getDownloadURL()} alt={p} onClick={handleClick}/>))}
       </div>
       <Modal />
       </div>
