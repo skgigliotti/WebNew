@@ -22,7 +22,7 @@ class Photos extends React.Component {
   }
 
   componentDidMount() { 
-    storage.ref("gallery/").once("value").then(snap => this.setState({images: snapshot.val()}).catch(error => console.error(error)))
+    storage.ref("gallery/").once("value").then((snapshot) => this.setState({images: snapshot.val()}).catch(error => console.error(error)))
    }
   
   render(){
