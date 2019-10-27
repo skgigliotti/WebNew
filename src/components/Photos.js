@@ -18,6 +18,7 @@ class Photos extends React.Component {
       images: []
       
     }
+    this.componentDidMount = this.componentDidMount.bind(this); 
   }
 
   componentDidMount() { 
