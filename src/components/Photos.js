@@ -27,7 +27,7 @@ class Photos extends React.Component {
     var ref = db.ref("/gallery");
 
     // Attach an asynchronous callback to read the data at our posts reference
-    ref.listAll().then((res) => {
+    ref.getDownloadURL().then((res) => {
       this.setState({
         images: res.items})
         console.log(res);
@@ -50,9 +50,7 @@ class Photos extends React.Component {
       <div className="Photos">
       {this.state.images.map((p) => (<img src={p.getDownloadURL} alt={p} onClick={handleClick}/>))}
       </div>
-      <div className="Photos">
-      {this.state.images.map((p) => (<img src={p.getDownloadURL()} alt={p} onClick={handleClick}/>))}
-      </div>
+      
       <Modal />
       </div>
     );
