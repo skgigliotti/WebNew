@@ -15,8 +15,7 @@ class Photos extends React.Component {
     super();
     this.state = {
       
-      images: [],
-      urls: []
+      images: []
       
     }
     this.getImages = this.getImages.bind(this); 
@@ -28,19 +27,16 @@ class Photos extends React.Component {
     var ref = db.ref("/gallery");
 
     // Attach an asynchronous callback to read the data at our posts reference
-    ref.FullMetadata.prototype.downloadURLs.then((res) => {
-      console.log(res)
-      
-        this.setState({urls:res})
-  
-      
+    ref.listAll().then((res) => {
+      this.setState({
+        images: res.items})
     })
     
   }
 
   componentDidMount() { 
     this.getImages();
-    
+    console.log(this.state.images);
    }
   
   render(){
@@ -51,9 +47,8 @@ class Photos extends React.Component {
       <div className="Page-all">
         
       <div className="Photos">
-      {this.state.urls.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
+      {this.state.images.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
       </div>
-      
       <Modal />
       </div>
     );
