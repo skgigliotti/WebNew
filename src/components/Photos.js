@@ -1,10 +1,33 @@
 import React from 'react';
 import Modal from './Modal.js';
 import firebase from '../base.js';
+import roses from '../photos/roses.jpg';
+import concentration from '../photos/vincent2.jpg';
+import sunset from '../photos/sunset.jpg';
+import fascination from '../photos/fascination.jpg';
+import flamenco from '../photos/flamenco.jpg';
+import getty from '../photos/getty.jpg';
+import kandinsky from '../photos/kandinsky.jpg';
+import home from '../photos/home.jpg';
+import face from '../photos/face2.jpg';
+import dandy from '../photos/dandy.jpg';
+import dante from '../photos/dante_city.jpg';
+import centro from '../photos/elcentro.jpg';
+import saginaw from '../photos/saginaw.jpg';
+import boston from '../photos/boston.jpg';
+import sierra from '../photos/sierra.jpg';
+import met from '../photos/met.jpg';
+import self from '../photos/selfport.jpg';
+import pom from '../photos/pom.jpg';
+import corgui from '../photos/corgui.jpg';
+import flor from '../photos/flor.jpg';
+
+const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
+  concentration, saginaw, face, sierra, centro, met, pom, corgui, flor, boston, dante, home, self, dandy];
 
 require('dotenv').config();
 
-const photos = ['roses', 'getty', 'sunset', 'kandinsky', 'flamenco', 'fascination',
+const photos2 = ['roses', 'getty', 'sunset', 'kandinsky', 'flamenco', 'fascination',
   'vincent2', 'saginaw', 'face2', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'dante_city', 'home', 'dandy'];
 
 
@@ -26,16 +49,7 @@ class Photos extends React.Component {
   }
     getImages(){
 
-      // Get a database reference to our posts
-      var db = firebase.storage();
-      var ref = db.ref("/gallery");
-  
-      // Attach an asynchronous callback to read the data at our posts reference
-      ref.then((res) => {
-        console.log(res)
-        ref.map((p) => (p.child(photos[p]).getDownloadURL().then(url => {
-          this.state.urls.push(url)})))
-      })
+    
   
     }
   
