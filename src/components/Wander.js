@@ -148,7 +148,7 @@ class Wander extends React.Component {
                 <h2>{entry.title}</h2>
                 <div className="Wander">
                 <img alt="perdon, no hay nada aquí" src={entry.url}/>
-                {entry.url}
+              
                 {entry.story}
               </div>
               </div>
