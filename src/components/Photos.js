@@ -30,9 +30,9 @@ class Photos extends React.Component {
     // Attach an asynchronous callback to read the data at our posts reference
     ref.FullMetadata.prototype.downloadURLs.then((res) => {
       console.log(res)
-      {
+      
         this.setState({urls:res})
-      }
+  
       
     })
     
