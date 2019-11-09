@@ -78,7 +78,6 @@
     grid-gap: 3vh;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: minmax(100px, auto);
-    
     position: relative;
 }
 
@@ -153,10 +152,6 @@ button {
         padding: 5vh 5vh 0vh 10vh;
         margin:5vh;
         display: inline-block;
-    }
-    .Home{
-        transform: translateX(200px);
-        position: relative;
     }
 
     h1{
