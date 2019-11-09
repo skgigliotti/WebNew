@@ -15,7 +15,7 @@ import Wander from './components/Wander.js';
 class App extends React.Component {
   render(){
     return (
-   
+   <div className="rectangle">
       <BrowserRouter>
           <div className="Title">
               Sophia Gigliotti
@@ -31,7 +31,7 @@ class App extends React.Component {
             <Route path="/wander" component={Wander} />
           </div>
       </BrowserRouter>
-     
+      </div>
     );
   }
   
