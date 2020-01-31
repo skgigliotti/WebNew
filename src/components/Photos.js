@@ -1,34 +1,14 @@
 import React from 'react';
 import Modal from './Modal.js';
 import firebase from '../base.js';
-import roses from '../photos/roses.jpg';
-import concentration from '../photos/vincent2.jpg';
-import sunset from '../photos/sunset.jpg';
-import fascination from '../photos/fascination.jpg';
-import flamenco from '../photos/flamenco.jpg';
-import getty from '../photos/getty.jpg';
-import kandinsky from '../photos/kandinsky.jpg';
-import home from '../photos/home.jpg';
-import face from '../photos/face2.jpg';
-import dandy from '../photos/dandy.jpg';
-import dante from '../photos/dante_city.jpg';
-import centro from '../photos/elcentro.jpg';
-import saginaw from '../photos/saginaw.jpg';
-import boston from '../photos/boston.jpg';
-import sierra from '../photos/sierra.jpg';
-import met from '../photos/met.jpg';
-import self from '../photos/selfport.jpg';
-import pom from '../photos/pom.jpg';
-import corgui from '../photos/corgui.jpg';
-import flor from '../photos/flor.jpg';
+import PhotoDisplay from './PhotoDisplay.js'
 
-const photos = [roses, getty, sunset, kandinsky, flamenco, fascination,
-  concentration, saginaw, face, sierra, centro, met, pom, corgui, flor, boston, dante, home, self, dandy];
+
 
 require('dotenv').config();
 
-const photos2 = ['roses', 'getty', 'sunset', 'kandinsky', 'flamenco', 'fascination',
-  'vincent2', 'saginaw', 'face2', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'dante_city', 'home', 'dandy'];
+const photos = ['roses', 'getty', 'sunset', 'kandinsky', 'flamenco', 'fascination',
+  'vincent2', 'saginaw', 'face2', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'dante_city', 'home', 'hda', 'ba','patio','puebla','sanmig','classmx','cruz','dandy'];
 
 
 
@@ -41,37 +21,61 @@ class Photos extends React.Component {
   constructor() {
     super();
     this.state = {
-      
-      images: []
-      
-    }
-    this.getImages = this.getImages.bind(this);
-  }
-    getImages(){
 
-    
-  
+      images: [],
+      ready: false
+
     }
-  
-    componentDidMount() { 
-      this.getImages();
+  }
+
+  getInitialState() {
+    return {
+      ready: false
+    }
+  }
+
+  componentDidMount() {
+
+      console.log('state im' , this.state.ready);
+      var storage = firebase.storage();
+      photos.map((p) => ((storage.ref('gallery/' + p + '.jpg')).getDownloadURL().then((url) =>
+        this.state.images.push(url)
+      ).catch(function(error) {
+        console.log(error)
+        // A full list of error codes is available at
+        // https://firebase.google.com/docs/storage/web/handle-errors
+        switch (error.code) {
+          case 'storage/object-not-found':
+            // File doesn't exist
+            break;
+
+          case 'storage/unauthorized':
+            // User doesn't have permission to access the object
+            break;
+
+          case 'storage/canceled':
+            // User canceled the upload
+            break;
+
+          case 'storage/unknown':
+            // Unknown error occurred, inspect the server response
+            break;
+        }
+      }).then(() => this.setState({ready: true}))))
+
+
      }
 
-  
-  render(){
-    
-
-    return (
-      <div className="Page-all">
-        
-      <div className="Photos">
-      {photos.map((p) => (<img src={p} alt={p} onClick={handleClick}/>))}
-      </div>
-      <Modal />
-      </div>
-    );
-    
+  render() {
+    if ( this.state.images != null ) {
+      return (
+        <PhotoDisplay images={this.state.images} />
+      )
+    } else {
+      return null;
+    }
   }
-  
+
+
 }
 export default Photos

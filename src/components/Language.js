@@ -11,14 +11,14 @@ class Language extends React.Component {
 
   componentDidMount(){
     const sample = firebase.database().ref('sample');
-  sample.on('value', (snapshot) => {
-    
+    sample.on('value', (snapshot) => {
+
     let sampleWriting = snapshot.val();
     this.setState({writing: sampleWriting.sor_juana});
   }
       );
   }
-  
+
   render(){
 
     return (
@@ -32,6 +32,7 @@ class Language extends React.Component {
       <li>Latin American Cultures </li>
       <li>Introduction to Hispanic Literature</li>
       <li>The Cradle of Magic Realism</li>
+      <li>Don Quijote</li>
       <li>Literary Translation</li>
       <li>History of Mexico</li>
       <li>Mexican Literature</li>
@@ -43,18 +44,20 @@ class Language extends React.Component {
     <div className="Text-background">
       <h2>Cross Cultural Engagement</h2>
     <ul>
-      <li>Currently studying abroad in Mexico. Improving ability to converse fluently in Spanish. 
-        Learning about Mexican culture.</li>
+
       <li>Weekly volunteer working with international students in Santa Barbara.
       Facilitate intercultural dialogue
       and help international students with conversational English.</li>
-    
+
+      <li>Studied abroad in Querétaro, Mexico. Improved grammar and ability to converse in Spanish.
+        Learned about Mexican culture and history.</li>
+
       <li>Au pair in Seville, Spain. Taught English to two young girls.
-        
+
         Improved my ability to communicate in Spanish.</li>
-  
+
     </ul>
-      
+
     </div>
     <div className="Text-background Example">
       <h2>Por ejemplo...</h2>
@@ -66,6 +69,6 @@ class Language extends React.Component {
     );
 
   }
-  
+
 }
 export default Language
