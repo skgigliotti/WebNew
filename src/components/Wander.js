@@ -21,9 +21,9 @@ class Wander extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handlePassChange = this.handlePassChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this); 
-    this.handleImgChange = this.handleImgChange.bind(this); 
-    this.handleUpload = this.handleUpload.bind(this); 
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleImgChange = this.handleImgChange.bind(this);
+    this.handleUpload = this.handleUpload.bind(this);
   }
 
   handleChange(e) {
@@ -57,7 +57,7 @@ class Wander extends React.Component {
         <form onSubmit={this.handleSubmit}>
         <div className="Text-background">
         <div className= "Entry-title">
-        
+
           <input type="text" name="title" placeholder="Título" cols="50" onChange={this.handleChange} value={this.state.title} />
           </div>
 
@@ -68,7 +68,7 @@ class Wander extends React.Component {
         <button onClick={this.handleUpload}>Upload</button>
         <button>Publicar</button>
         </div>
-        
+
         </form>
       )
     }
@@ -76,7 +76,7 @@ class Wander extends React.Component {
 
   handleImgChange(e){
     if(e.target.files[0]){
-      const img = e.target.files[0]; 
+      const img = e.target.files[0];
       this.setState({image: img});
     }
   }
@@ -88,18 +88,18 @@ class Wander extends React.Component {
   handleUpload(e){
     console.log(this.state.url);
     e.preventDefault();
-    
+
     const img = this.state.image;
 
     if(img != null){
-    
+
     const imgUpload = storage.ref('images/'+ img.name).put(img);
-    imgUpload.on('state_changed', 
+    imgUpload.on('state_changed',
     (snapshot) => {
 
     }, (error) => {
       console.log(error);
-    }, 
+    },
     () => {
       storage.ref('images').child(img.name).getDownloadURL().then(url => {
         this.setState({url});
@@ -129,18 +129,18 @@ class Wander extends React.Component {
   }
 
   render(){
-    
+
 
     return (
       <div className="Page-all">
-        
+
         <h1>Wander</h1>
-        <p>Bienvenidos! Here I will attempt to reflect on my travel experiences and share some of my favorite photos.</p>
+        <p>Welcome! Here I will attempt to reflect on my travel experiences and share some of my favorite photos.</p>
         <p2> login</p2>
         <input type='text' className= "Upload" onChange={this.handlePassChange} />
         {this.renderCreatePost(this.state.passcode == pass)}
 
-        
+
           {this.state.entries.map((entry) =>{
             return (
              <div>
@@ -148,7 +148,7 @@ class Wander extends React.Component {
                 <h2>{entry.title}</h2>
                 <div className="Wander">
                 <img alt="perdon, no hay nada aquí" src={entry.url}/>
-              
+
                 {entry.story}
               </div>
               </div>
@@ -156,12 +156,12 @@ class Wander extends React.Component {
               </div>
             )
           })}
-        
+
 
       </div>
     );
-    
+
   }
-  
+
 }
 export default Wander

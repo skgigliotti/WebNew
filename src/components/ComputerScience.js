@@ -52,7 +52,9 @@ const ComputerScience = () => {
         <li>Probability and Statistics</li>
         <li>Computer Architecture and Hardware</li>
         <li>Networks</li>
-      </ul>
+      	<li>Artificial Intelligence</li>
+	<li>Formal Languages & Automata</li>
+	</ul>
       </div>
     </div>
     
