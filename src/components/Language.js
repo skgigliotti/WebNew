@@ -29,7 +29,7 @@ class Language extends React.Component {
     <div className="Text-background">
       <h2>Translation</h2>
         <ul>
-          <li>Translated poems and short stories by contemporary, published Mexican authors. Collaborated with original authors. Professionally recorded audio of written translation.</li>
+          <li>Translated poems and short stories by nine different contemporary, published Mexican authors. Collaborated with original authors. Professionally recorded audio of written translation.</li>
           <li>Translated website content for Mesón de San Andrés hotel. </li>
         </ul>
       <h2>Courses</h2>
@@ -69,8 +69,8 @@ class Language extends React.Component {
 
     </div>
     <div className="Text-background Example">
-      <h2>Por ejemplo...</h2>
-      <h1 style={ {padding: '2vh 2vh 2vh 4vh'}}>En cuanto a Sor Juana Inés de La Cruz</h1>
+      <h2>Writing Sample (Spanish)...</h2>
+      <h1 style={ {padding: '2vh 2vh 2vh 4vh'}}>Inspiración de Sor Juana Inés de La Cruz</h1>
     <p>{this.state.writing}</p>
     </div>
         </div>
