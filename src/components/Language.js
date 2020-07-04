@@ -22,41 +22,47 @@ class Language extends React.Component {
   render(){
 
     return (
-      <div className="Page-all">
+<div className="Page-all">
         <h1>Language</h1>
-        <div className="Language">
-          <div className="Text-background">
-          <h2>Courses</h2>
+  <div className="Language">
+
+    <div className="Text-background">
+      <h2>Translation</h2>
         <ul>
-      <li>Advanced Spanish Language and Grammar</li>
-      <li>Latin American Cultures </li>
-      <li>Introduction to Hispanic Literature</li>
-      <li>The Cradle of Magic Realism</li>
-      <li>Don Quijote</li>
-      <li>Literary Translation</li>
-      <li>History of Mexico</li>
-      <li>Mexican Literature</li>
-      <li>Advanced Spanish Conversation</li>
-      <li>Engaging and Understanding Cultures</li>
-      <li>Latin Dance</li>
-    </ul>
+          <li>Translated poems and short stories by contemporary, published Mexican authors. Collaborated with original authors. Professionally recorded audio of written translation.</li>
+          <li>Translated website content for Mesón de San Andrés hotel. </li>
+        </ul>
+      <h2>Courses</h2>
+        <ul>
+          <li>Advanced Spanish Language and Grammar</li>
+          <li>Latin American Cultures </li>
+          <li>Introduction to Hispanic Literature</li>
+          <li>The Cradle of Magic Realism</li>
+          <li>Don Quijote</li>
+          <li>Literary Translation</li>
+          <li>History of Mexico</li>
+          <li>Mexican Literature</li>
+          <li>Advanced Spanish Conversation</li>
+          <li>Engaging and Understanding Cultures</li>
+          <li>Latin Dance</li>
+      </ul>
     </div>
     <div className="Text-background">
       <h2>Cross Cultural Engagement</h2>
     <ul>
 
-      <li><span role="img" aria-label="mx">🌎</span>Weekly volunteer working with international students studying in Santa Barbara.
+      <li><span role="img" aria-label="mx">🌎</span>  Weekly volunteer working with international students studying in Santa Barbara.
       Facilitate intercultural dialogue
       and help students with conversational English.</li>
 
-      <li><span role="img" aria-label="mx">🇲🇽</span>University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
+      <li><span role="img" aria-label="mx">🇲🇽</span>  University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
         Learned about Mexican culture and history.</li>
 
-      <li><span role="img" aria-label="sp">🇪🇸</span>Au pair in Seville, Spain. Taught English to two young girls.
+      <li><span role="img" aria-label="sp">🇪🇸</span>  Au pair in Seville, Spain. Taught English to two young girls.
 
         Learned the joys and challenges of adapting to life in a new country. Made significant progress in Spanish abilities.</li>
 
-        <li><span role="img" aria-label="it">🇮🇹</span>Currently learning Italian to connect with my family and
+        <li><span role="img" aria-label="it">🇮🇹</span>  Currently learning Italian to connect with my family and
         understand Italian culture.</li>
 
     </ul>
