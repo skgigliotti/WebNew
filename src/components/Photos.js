@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const photos = ['roses', 'getty', 'sunset', 'kandinsky', 'flamenco', 'fascination',
   'vincent2', 'saginaw', 'face2', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'dante_city', 'home', 'hda',
-  'ba','patio','puebla','sanmig','classmx','cruz','dandy','diff_manchester_encoding','transmission_media'];
+  'ba','patio','puebla','sanmig','classmx','cruz','dandy','transmission_media'];
 
 
 
