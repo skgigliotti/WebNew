@@ -45,16 +45,19 @@ class Language extends React.Component {
       <h2>Cross Cultural Engagement</h2>
     <ul>
 
-      <li>Weekly volunteer working with international students in Santa Barbara.
+      <li><span role="img" aria-label="mx">🌎</span>Weekly volunteer working with international students studying in Santa Barbara.
       Facilitate intercultural dialogue
-      and help international students with conversational English.</li>
+      and help students with conversational English.</li>
 
-      <li>Studied abroad in Querétaro, Mexico. Improved grammar and ability to converse in Spanish.
+      <li><span role="img" aria-label="mx">🇲🇽</span>University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
         Learned about Mexican culture and history.</li>
 
-      <li>Au pair in Seville, Spain. Taught English to two young girls.
+      <li><span role="img" aria-label="sp">🇪🇸</span>Au pair in Seville, Spain. Taught English to two young girls.
 
-        Improved my ability to communicate in Spanish.</li>
+        Learned the joys and challenges of adapting to life in a new country. Made significant progress in Spanish abilities.</li>
+
+        <li><span role="img" aria-label="it">🇮🇹</span>Currently learning Italian to connect with my family and
+        understand Italian culture.</li>
 
     </ul>
 
