@@ -19,22 +19,19 @@ const ComputerScience = () => {
       <div className="Text-background">
         <h2>Experience</h2>
       <ul>
-          <li>Git</li>
-          <li>SQL</li>
-          <li>HTML/Web Design</li>
-          <li>Salesforce (trigger and component development)</li>
-          <li>Test-driven development</li>
-          <li>OpenGL</li>
+          <li>Web Development</li>
+          <li>Salesforce Development</li>
+          <li>Database Design</li>
         </ul>
       </div>
-      
+
       <div>
       <a href="https://www.linkedin.com/in/sophia-gigliotti/" target="_blank"><img src={lin} style={{width: "25vh"}}/></a>
       <a href="https://github.com/skgigliotti" target="_blank"><img src={github} style={{width: "25vh",
     float: "right"}}/></a>
       </div>
-      
-      
+
+
       <div className="Courses Text-background">
       <h2>Courses</h2>
         <ul>
@@ -57,7 +54,7 @@ const ComputerScience = () => {
 	</ul>
       </div>
     </div>
-    
+
     </div>
   );
 }

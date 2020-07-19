@@ -15,10 +15,9 @@ const Home = () => {
           I am a Computer Scientist and a language learner.
           My long-term goal is to teach computer science to primary and secondary students.
           I am determined to involve and empower young students from underrepresented groups to engage with technology creation.
-          If we truly want to be building solutions that benefit more people, it's time to prioritize and value diversity.
           I am passionate about seeking justice and equity through technology and otherwise.</p>
 
-          <p>Professionally, I work as a Junior Software Developer at Outside Open.
+          <p>Professionally, I work as a Junior Software Developer at Outside Open in Santa Barbara, CA.
         </p>
 
         <p>
