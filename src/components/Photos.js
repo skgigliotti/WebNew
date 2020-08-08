@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from './Modal.js';
 import firebase from '../base.js';
 import PhotoDisplay from './PhotoDisplay.js'
+import Divider from '@material-ui/core/Divider';
 
 
 
@@ -11,7 +12,7 @@ const photos = ['getty', 'sunset', 'flamenco', 'fascination',
   'saginaw', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'home', 'hda',
   'ba','patio','puebla','sanmig','classmx','cruz','wall','leon','doggo','red','icecream','bridge'];
 
-const graphics = ['roses', 'getty', 'kandinsky',
+const graphics = ['roses', 'kandinsky',
     'vincent2', 'face2', 'dante_city',
     'dandy'];
 
@@ -100,6 +101,7 @@ class Photos extends React.Component {
       return (
         <div>
           <PhotoDisplay images={this.state.photos} />
+          <Divider/>
           <PhotoDisplay images={this.state.graphics} />
         </div>
       )
