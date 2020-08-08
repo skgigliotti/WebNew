@@ -101,7 +101,6 @@ class Photos extends React.Component {
       return (
         <div>
           <PhotoDisplay images={this.state.photos} />
-          <Divider variant="middle"/>
           <PhotoDisplay images={this.state.graphics} />
         </div>
       )
