@@ -7,10 +7,13 @@ import PhotoDisplay from './PhotoDisplay.js'
 
 require('dotenv').config();
 
-const photos = ['roses', 'getty', 'sunset', 'kandinsky', 'flamenco', 'fascination',
-  'vincent2', 'saginaw', 'face2', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'dante_city', 'home', 'hda',
-  'ba','patio','puebla','sanmig','classmx','cruz','dandy','wall','leon','doggo','red','icecream','bridge'];
+const photos = ['getty', 'sunset', 'flamenco', 'fascination',
+  'saginaw', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'home', 'hda',
+  'ba','patio','puebla','sanmig','classmx','cruz','wall','leon','doggo','red','icecream','bridge'];
 
+const graphics = ['roses', 'getty', 'kandinsky',
+    'vincent2', 'face2', 'dante_city',
+    'dandy'];
 
 
 function handleClick(e) {
@@ -23,7 +26,8 @@ class Photos extends React.Component {
     super();
     this.state = {
 
-      images: [],
+      photos: [],
+      graphics: [],
       ready: false
 
     }
@@ -37,7 +41,6 @@ class Photos extends React.Component {
 
   componentDidMount() {
 
-      console.log('state im' , this.state.ready);
       var storage = firebase.storage();
       photos.map((p) => ((storage.ref('gallery/' + p + '.jpg')).getDownloadURL().then((url) =>
         this.state.images.push(url)
@@ -68,9 +71,12 @@ class Photos extends React.Component {
      }
 
   render() {
-    if ( this.state.images != null ) {
+    if ( this.state.photos != null && this.state.graphics != null) {
       return (
-        <PhotoDisplay images={this.state.images} />
+        <div>
+          <PhotoDisplay images={this.state.photos} />
+          <PhotoDisplay images={this.state.graphics} />
+        </div>
       )
     } else {
       return null;
