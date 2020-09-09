@@ -13,7 +13,7 @@ const photos = ['getty', 'sunset', 'flamenco', 'fascination',
   'ba','patio','puebla','sanmig','classmx','cruz','wall','leon','doggo','red','icecream','bridge'];
 
 const graphics = ['roses', 'kandinsky',
-    'vincent2', 'face2', 'dante_city',
+    'vincent2', 'rmw', 'face2', 'dante_city',
     'dandy'];
 
 
