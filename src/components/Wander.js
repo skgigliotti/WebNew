@@ -141,7 +141,7 @@ class Wander extends React.Component {
         {this.renderCreatePost(this.state.passcode == pass)}
 
 
-          {this.state.entries.map((entry) =>{
+          {this.state.entries.reverse().map((entry) =>{
             return (
              <div>
               <div className= "Posts">
