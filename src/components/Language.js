@@ -51,18 +51,18 @@ class Language extends React.Component {
           <div className="Text-background">
             <h2>Cross Cultural Engagement</h2>
 
-            <div><span role="img" aria-label="mx">🌎</span>  Meet weekly with international students studying in Santa Barbara.
+            <div><span role="img" aria-label="mx">🌎  </span>  Meet weekly with international students studying in Santa Barbara.
       Foster genuine friendships, facilitate intercultural dialogue
       and help students with conversational English.</div>
 
-            <div><span role="img" aria-label="mx">🇲🇽</span>  University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
+            <div><span role="img" aria-label="mx">🇲🇽  </span>  University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
         Learned about Mexican culture and history.</div>
 
-            <div><span role="img" aria-label="sp">🇪🇸</span>  Au pair in Seville, Spain. Taught English to two young girls.
+            <div><span role="img" aria-label="sp">🇪🇸  </span>  Au pair in Seville, Spain. Taught English to two young girls.
 
         Learned the joys and challenges of adapting to life in a new country. Made significant progress in Spanish abilities.</div>
-            <div><span role="img" aria-label="it">🇯🇵</span>  Student of Japanese at SBCC. Able to read hiragana and katakana and continuing to learn more kanji.</div>
-            <div><span role="img" aria-label="it">🇮🇹</span>  Learning Italian to connect with my grandparents and
+            <div><span role="img" aria-label="it">🇯🇵  </span>  Student of Japanese at SBCC. Able to read hiragana and katakana and continuing to learn more kanji.</div>
+            <div><span role="img" aria-label="it">🇮🇹  </span>  Learning Italian to connect with my grandparents and
         understand Italian culture.</div>
 
           </div>
