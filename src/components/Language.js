@@ -60,7 +60,7 @@ class Language extends React.Component {
 
             <div><span role="img" aria-label="sp">🇪🇸</span>  Au pair in Seville, Spain. Taught English to two young girls.
 
-        Learned the joys and challenges of adapting to life in a new country. Made significant progress in Spanish abilities.</li>
+        Learned the joys and challenges of adapting to life in a new country. Made significant progress in Spanish abilities.</div>
             <div><span role="img" aria-label="it">🇯🇵</span>  Student of Japanese at SBCC. Able to read hiragana and katakana and continuing to learn more kanji.</div>
             <div><span role="img" aria-label="it">🇮🇹</span>  Learning Italian to connect with my grandparents and
         understand Italian culture.</div>
