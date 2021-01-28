@@ -24,9 +24,9 @@ const ComputerScience = () => {
         </div>
 
         <div>
-          <a href="https://www.linkedin.com/in/sophia-gigliotti/" target="_blank"><img src={lin} style={{ width: "10vh" }} /></a>
+          <a href="https://www.linkedin.com/in/sophia-gigliotti/" target="_blank"><img src={lin} style={{ width: "25vh" }} /></a>
           <a href="https://github.com/skgigliotti" target="_blank"><img src={github} style={{
-            width: "10vh",
+            width: "25vh",
             float: "right"
           }} /></a>
         </div>
