@@ -81,7 +81,9 @@
 }
 
 h1{
-
+    font-weight: bold;
+    font-size: 7vh;
+    margin: 7vh;
     position: relative;
     color: rgb(85, 76, 85);
 }

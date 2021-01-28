@@ -109,3 +109,16 @@
 
   }
 }
+
+.footer {
+  position:absolute;
+  left:0;
+  bottom:-100vh;
+  right:0;
+}
+
+.icons {
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 16px;
+}
