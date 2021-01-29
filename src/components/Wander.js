@@ -1,6 +1,6 @@
 import React from 'react';
 import firebase from '../base.js';
-import { storage } from '../base.js';
+import {storage} from '../base.js';
 
 require('dotenv').config();
 
@@ -16,7 +16,7 @@ class Wander extends React.Component {
       entries: [],
       image: null,
       url: '',
-      passcode: ''
+      passcode:''
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -36,84 +36,84 @@ class Wander extends React.Component {
 
     e.preventDefault();
     const entryList = firebase.database().ref('entries');
-    if (this.state.title !== '' && this.state.story !== '') {
-      const entry = {
-        title: this.state.title,
-        story: this.state.story,
-        url: this.state.url
-      }
-      entryList.push(entry);
-      this.setState({
-        title: '',
-        story: ''
-      });
+    if(this.state.title !== '' && this.state.story !== ''){
+    const entry = {
+      title: this.state.title,
+      story: this.state.story,
+      url: this.state.url
     }
+    entryList.push(entry);
+    this.setState({
+      title: '',
+      story: ''
+    });
+  }
 
   }
 
-  renderCreatePost(me) {
-    if (me) {
-      return (
+  renderCreatePost(me){
+    if(me){
+      return(
         <form onSubmit={this.handleSubmit}>
-          <div className="Text-background">
-            <div className="Entry-title">
+        <div className="Text-background">
+        <div className= "Entry-title">
 
-              <input type="text" name="title" placeholder="Título" cols="50" onChange={this.handleChange} value={this.state.title} />
-            </div>
-
-            <div className="Entry-body">
-              <textarea name="story" placeholder="Historia del día" rows="25" cols="100" onChange={this.handleChange} value={this.state.story} />
-            </div>
-            <input type='file' className="Upload" id='multi' onChange={this.handleImgChange} />
-            <button onClick={this.handleUpload}>Upload</button>
-            <button>Publicar</button>
+          <input type="text" name="title" placeholder="Título" cols="50" onChange={this.handleChange} value={this.state.title} />
           </div>
+
+          <div className = "Entry-body">
+          <textarea name="story" placeholder="Historia del día" rows="25" cols="100" onChange={this.handleChange} value={this.state.story} />
+        </div>
+        <input type='file' className= "Upload" id='multi' onChange={this.handleImgChange} />
+        <button onClick={this.handleUpload}>Upload</button>
+        <button>Publicar</button>
+        </div>
 
         </form>
       )
     }
   }
 
-  handleImgChange(e) {
-    if (e.target.files[0]) {
+  handleImgChange(e){
+    if(e.target.files[0]){
       const img = e.target.files[0];
-      this.setState({ image: img });
+      this.setState({image: img});
     }
   }
 
-  handlePassChange(e) {
-    this.setState({ passcode: e.target.value });
+  handlePassChange(e){
+    this.setState({passcode: e.target.value});
   }
 
-  handleUpload(e) {
+  handleUpload(e){
     console.log(this.state.url);
     e.preventDefault();
 
     const img = this.state.image;
 
-    if (img != null) {
+    if(img != null){
 
-      const imgUpload = storage.ref('images/' + img.name).put(img);
-      imgUpload.on('state_changed',
-        (snapshot) => {
+    const imgUpload = storage.ref('images/'+ img.name).put(img);
+    imgUpload.on('state_changed',
+    (snapshot) => {
 
-        }, (error) => {
-          console.log(error);
-        },
-        () => {
-          storage.ref('images').child(img.name).getDownloadURL().then(url => {
-            this.setState({ url });
-          })
-        });
-    }
+    }, (error) => {
+      console.log(error);
+    },
+    () => {
+      storage.ref('images').child(img.name).getDownloadURL().then(url => {
+        this.setState({url});
+      })
+    });
+}
   }
 
-  componentDidMount() {
+  componentDidMount(){
     const entryList = firebase.database().ref('entries');
     entryList.on('value', (snapshot) => {
       let entries = snapshot.val();
       let newState = [];
-      for (let e in entries) {
+      for(let e in entries){
         newState.push({
           id: e,
           title: entries[e].title,
@@ -128,40 +128,34 @@ class Wander extends React.Component {
     });
   }
 
-  render() {
+  render(){
 
 
     return (
       <div className="Page-all">
 
         <h1>Wander</h1>
-
         <p>Welcome! Here I will attempt to reflect on my travel experiences and share some of my favorite photos.</p>
         <p2> login</p2>
-        <input type='text' className="Upload" onChange={this.handlePassChange} />
+        <input type='text' className= "Upload" onChange={this.handlePassChange} />
         {this.renderCreatePost(this.state.passcode == pass)}
 
 
-        {this.state.entries.reverse().map((entry) => {
-          return (
-            <div>
-              <div className="Posts">
+          {this.state.entries.reverse().map((entry) =>{
+            return (
+             <div>
+              <div className= "Posts">
                 <h2>{entry.title}</h2>
                 <div className="Wander">
-                  <img alt="perdon, no hay nada aquí" src={entry.url} />
-                  <ul>
-                    <li class="sgLi">
-                      {entry.story}
-                    </li>
+                <img alt="perdon, no hay nada aquí" src={entry.url}/>
 
-                  </ul>
-
-                </div>
+                {entry.story}
               </div>
-              <hr />
-            </div>
-          )
-        })}
+              </div>
+              <hr/>
+              </div>
+            )
+          })}
 
 
       </div>
