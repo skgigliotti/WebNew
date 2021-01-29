@@ -19,17 +19,14 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="content-wrap">
-          <span className="rectangle"></span>
+
           <BrowserRouter>
 
             <div className="Title">
               Sophia Gigliotti
             </div>
-
-
             <div>
               <Menu />
-
             </div>
             <div className="App">
               <Route exact path="/" component={Home} />
@@ -41,6 +38,7 @@ class App extends React.Component {
           </BrowserRouter>
 
         </div>
+
         <Footer />
       </div >
     );
