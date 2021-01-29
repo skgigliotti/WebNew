@@ -201,3 +201,17 @@ button {
 
     
 }
+
+.footer {
+  position:relative;
+  padding-top: 25vh;
+  padding-bottom: 10vh;
+  margin: 0 auto;
+  
+}
+
+.icons {
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 10vh;
+}

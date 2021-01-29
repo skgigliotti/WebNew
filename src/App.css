@@ -110,15 +110,12 @@
   }
 }
 
-.footer {
-  position:absolute;
-  left:0;
-  bottom:-100vh;
-  right:0;
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.icons {
-  display: inline-grid;
-  grid-template-columns: repeat(4, auto);
-  column-gap: 16px;
+.content-wrap{
+  flex: ;
 }
