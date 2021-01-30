@@ -60,7 +60,7 @@ class Language extends React.Component {
                 🇲🇽  University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
               </li>
               <li class="sgLi">
-                🇪🇸  Au pair in Seville, Spain. Taught English to two young girls. Learned to converse in Spanish and live in a new culture.
+                🇪🇸  Au pair in Seville, Spain. Taught English to two young girls. Learned to put Spanish in context and navigate life a new culture.
               </li>
               <li class="sgLi">
                 🇯🇵  Student of Japanese at SBCC. Able to read hiragana and katakana and continuing to learn more kanji. Learn about Japanese culture and customs.

@@ -137,9 +137,7 @@ class Wander extends React.Component {
         <h1>Wander</h1>
 
         <p>Welcome! Here I will attempt to reflect on my travel experiences and share some of my favorite photos.</p>
-        <p2> login</p2>
-        <input type='text' className="Upload" onChange={this.handlePassChange} />
-        {this.renderCreatePost(this.state.passcode === pass)}
+
 
 
         {this.state.entries.reverse().map((entry) => {
