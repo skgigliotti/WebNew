@@ -8,7 +8,6 @@ import ComputerScience from './components/ComputerScience.js';
 import Language from './components/Language.js';
 import Photos from './components/Photos.js';
 import Wander from './components/Wander.js';
-const Spacer = require('react-spacer')
 
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Components.css';
 import { SocialIcon } from 'react-social-icons';
-const Spacer = require('react-spacer')
 
 class Footer extends React.Component {
     render() {
