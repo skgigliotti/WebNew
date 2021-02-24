@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const photos = ['getty', 'sunset', 'flamenco', 'fascination',
   'saginaw', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'home', 'hda',
-  'ba', 'patio', 'puebla', 'sanmig', 'classmx', 'cruz', 'wall', 'leon', 'doggo', 'red', 'icecream', 'bridge'];
+  'ba', 'patio', 'puebla', 'sanmig', 'classmx', 'cruz', 'wall', 'leon', 'doggo', 'red', 'icecream', 'bridge', 'golden_soap'];
 
 const graphics = ['roses', 'kandinsky',
   'vincent2', 'rmw', 'face2', 'dante_city',
