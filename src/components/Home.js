@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../photos/profile.JPG';
+import profile from '../photos/profile2.jpg';
 import '../App.css';
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
           <ul class="SG">
             <li class="sgLi">
               <span style={{ padding: "5vh"}}>
-I am a computer scientist and a language learner.
+I am a computer scientist, photographer, and a language learner.
                 My long-term goal is to teach computer science to primary and secondary students.
                 I am determined to involve and empower young students from underrepresented groups to engage with technology creation.
           I am passionate about seeking justice and equity through technology and otherwise.
@@ -32,7 +32,7 @@ I am a computer scientist and a language learner.
 
       </div>
       <div className="Profile">
-        <img src={profile} style={{ width: '75%' }} title="Here I am traveling in Portland, ME. Camera in hand as always!" />
+          <img src={profile} style={{ width: '70%' }} title="Here I am traveling in Guanajuato, holding my camera incorrectly 🙃" />
       </div>
 
     </div>
