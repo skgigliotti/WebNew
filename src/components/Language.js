@@ -71,18 +71,18 @@ class Language extends React.Component {
             </ul>
 
           </div>
-          <div className="Text-background Example">
+          {/* <div className="Text-background Example">
             <h2>Writing Sample (Spanish)...</h2>
 
             <ul class="SG">
               <li class="sgLi">
-                {/* <h2 style={{ padding: '2vh 2vh 2vh 4vh' }}>Inspiración de Sor Juana Inés de La Cruz</h2> */}
+                <h2 style={{ padding: '2vh 2vh 2vh 4vh' }}>Inspiración de Sor Juana Inés de La Cruz</h2>
                 ✏️  {this.state.writing}
               </li>
 
             </ul>
 
-          </div>
+          </div> */}
         </div>
       </div>
     );
