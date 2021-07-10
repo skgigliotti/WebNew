@@ -32,7 +32,6 @@ class App extends React.Component {
               <Route path="/computerScience" component={ComputerScience} />
               <Route path="/language" component={Language} />
               <Route path="/photos&design" component={Photos} />
-              <Route path="/wander" component={Wander} />
             </div>
           </BrowserRouter>
 
