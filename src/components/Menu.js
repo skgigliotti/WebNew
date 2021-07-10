@@ -28,7 +28,6 @@ class Menu extends Component {
         <Link to="/computerScience"><Circle label="Computer Science" on /></Link>
         <Link to="/language"><Circle label="Language" /></Link>
         <Link to="/photos&design"><Circle label="Photos + Design" /></Link>
-        <Link to="/wander"><Circle label="Wander" /></Link>
       </div>
     );
 
