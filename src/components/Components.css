@@ -49,7 +49,7 @@
   }
 
 .Cs-projects{
-    grid-column: 1/3;
+    grid-column: 1/2;
 
 }
 
@@ -85,7 +85,8 @@ h1{
     font-size: 7vh;
     margin: 7vh;
     position: relative;
-    color: rgb(85, 76, 85);
+    color: rgb(38, 34, 46);
+    /* color: rgb(251, 139, 36); */
 }
 
 h2{
@@ -236,7 +237,6 @@ li{
   min-width: 24%;
   margin: 2% .35%;
   display: inline-flex;
-  box-shadow: 0 2px 4px #bbb;
   padding: 1vh;
 }
 

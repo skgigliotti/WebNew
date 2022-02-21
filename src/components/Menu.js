@@ -3,7 +3,7 @@ import '../App.css';
 import './Components.css';
 import { Link } from 'react-router-dom';
 
-function Circle(props) {
+function NavItem(props) {
 
   return (
     <div className="Circle">
@@ -24,10 +24,10 @@ class Menu extends Component {
 
     return (
       <div className="CircleBar">
-        <Link to="/"><Circle label="Home" /></Link>
-        <Link to="/computerScience"><Circle label="Computer Science" on /></Link>
-        <Link to="/language"><Circle label="Language" /></Link>
-        <Link to="/photos&design"><Circle label="Photos + Design" /></Link>
+        <Link to="/"><NavItem label="Home" /></Link>
+        <Link to="/computer-science"><NavItem label="Computer Science" on /></Link>
+        <Link to="/language"><NavItem label="Language" /></Link>
+        <Link to="/photos-and-design"><NavItem label="Photos + Design" /></Link>
       </div>
     );
 
