@@ -2,27 +2,26 @@ import React from 'react';
 import firebase from '../base.js';
 import PhotoDisplay from './PhotoDisplay.js'
 
-
-
 require('dotenv').config();
 
 const photos = ['getty', 'sunset', 'flamenco',
-  'saginaw', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'flor', 'boston', 'home', 'hda',
-  'ba', 'patio', 'puebla', 'sanmig', 'classmx', 'cruz', 'wall', 'leon', 'doggo', 'red', 'icecream', 'bridge', 'golden_soap', 'fire', 'beach_xmas'];
+  'saginaw', 'vine', 'hacking', 'sierra', 'elcentro', 'met', 'pom', 'corgui', 'boston', 'home', 'hda',
+  'ba', 'patio', 'puebla', 'sanmig', 'classmx', 'cruz', 'wall', 'leon', 'doggo', 'red', 'icecream', 'bridge', 'golden_soap', 'fire', 'beach_xmas',
+  'sunflowers', 'running', 'cam', 'cherry', 'boscom', 'bici', 'moth'];
 
-const portraits = ['mm',
+const portraits = ['trav_pink',
   'fence_trav', 'flower_chena', 'side_trav', 'fascination',
   'tree_chena', 'leaves_ben', 'court_ben', 'rebeca'];
 
 const v_portraits = ['shoe_trav',
-  'shadow_bro', 'reflection_trav'];
+  'shadow_bro'];
 
 const graphics = ['roses', 'kandinsky',
-  'vincent2', 'face2', 'dante_city',
+  'vincent2', 'face2', 'dante_city', 'ghosts',
 ];
 
 const v_graphics = [
-  'dandy'];
+  'dandy', 'rage'];
 
 
 function handleClick(e) {
