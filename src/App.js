@@ -29,9 +29,9 @@ class App extends React.Component {
             </div>
             <div className="App">
               <Route exact path="/" component={Home} />
-              <Route path="/computerScience" component={ComputerScience} />
+              <Route path="/computer-science" component={ComputerScience} />
               <Route path="/language" component={Language} />
-              <Route path="/photos&design" component={Photos} />
+              <Route path="/photos-and-design" component={Photos} />
             </div>
           </BrowserRouter>
 

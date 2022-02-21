@@ -1,5 +1,7 @@
 import React from 'react';
 import firebase from '../base.js';
+import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
 
 class Language extends React.Component {
   constructor() {
@@ -10,64 +12,59 @@ class Language extends React.Component {
   }
 
   componentDidMount() {
-    const sample = firebase.database().ref('sample');
-    sample.on('value', (snapshot) => {
 
-      let sampleWriting = snapshot.val();
-      this.setState({ writing: sampleWriting.sor_juana });
-    }
-    );
   }
 
   render() {
 
     return (
       <div className="Page-all">
-        <h1>Language</h1>
         <div className="Language">
 
           <div className="Text-background">
             <h2>Translation</h2>
             <ul class="SG">
-              <li class="sgLi"> 📖  Translated poems and short stories by nine different contemporary, published Mexican authors. Collaborated with original authors. Professionally recorded audio of written translation.</li>
-              <li class="sgLi"> 💻  Translated website content for Mesón de San Andrés hotel. </li>
+              <Card class="sgLi"><Typography>📖</Typography><Typography>Translated poems and short stories by nine different contemporary, published Mexican authors. Collaborated with original authors. Professionally recorded audio of written translation.</Typography></Card>
+              <Card class="sgLi"> <Typography>💻</Typography><Typography>Translated website content for Mesón de San Andrés hotel.</Typography> </Card>
             </ul>
             <h2>Courses</h2>
             <ul class="SG">
-              <li class="sgLi">Advanced Spanish Language and Grammar</li>
-              <li class="sgLi"> Latin American Cultures </li>
-              <li class="sgLi">Introduction to Hispanic Literature</li>
-              <li class="sgLi">The Cradle of Magic Realism</li>
-              <li class="sgLi">Don Quijote</li>
-              <li class="sgLi">Literary Translation</li>
-              <li class="sgLi">History of Mexico</li>
-              <li class="sgLi">Mexican Literature</li>
-              <li class="sgLi">Advanced Spanish Conversation</li>
-              <li class="sgLi">Engaging and Understanding Cultures</li>
-              <li class="sgLi">Beginning Japanese 1</li>
-              <li class="sgLi">Beginning Japanese 2</li>
+              <Card class="sgLi"><Typography>Advanced Spanish Language and Grammar</Typography></Card>
+              <Card class="sgLi"><Typography>Latin American Cultures</Typography></Card>
+              <Card class="sgLi"><Typography>Introduction to Hispanic Literature</Typography></Card>
+              <Card class="sgLi"><Typography>The Cradle of Magic Realism</Typography></Card>
+              <Card class="sgLi"><Typography>Don Quijote</Typography></Card>
+              <Card class="sgLi"><Typography>Literary Translation</Typography></Card>
+              <Card class="sgLi"><Typography>History of Mexico</Typography></Card>
+              <Card class="sgLi"><Typography>Mexican Literature</Typography></Card>
+              <Card class="sgLi"><Typography>Advanced Spanish Conversation</Typography></Card>
+              <Card class="sgLi"><Typography>Engaging and Understanding Cultures</Typography></Card>
+              <Card class="sgLi"><Typography>Beginning Japanese 1</Typography></Card>
+              <Card class="sgLi"><Typography>Beginning Japanese 2</Typography></Card>
+              <Card class="sgLi"><Typography>Intermediate Japanese 1</Typography></Card>
+              <Card class="sgLi"><Typography>Intermediate Japanese 2</Typography></Card>
             </ul>
           </div>
           <div className="Text-background">
             <h2>Cross Cultural Engagement</h2>
             <ul class="SG">
-              <li class="sgLi">
-                🌎  Meet weekly with international students studying in Santa Barbara.
-                Foster genuine friendships, facilitate intercultural dialogue
-                and help students with conversational English.
-              </li>
-              <li class="sgLi">
-                🇲🇽  University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.
-              </li>
-              <li class="sgLi">
-                🇪🇸  Au pair in Seville, Spain. Taught English to two young girls. Learned to put Spanish in context and navigate life a new culture.
-              </li>
-              <li class="sgLi">
-                🇯🇵  Student of Japanese at SBCC. Able to read hiragana and katakana and continuing to learn more kanji. Learn about Japanese culture and customs.
-              </li>
-              <li class="sgLi">
-                🇮🇹  Learning Italian to connect with my grandparents and understand my family's Italian culture.
-              </li>
+              <Card class="sgLi">
+                <Typography>🌎</Typography>  <Typography>Meet weekly with international students studying in Santa Barbara.
+                  Foster genuine friendships, facilitate intercultural dialogue
+                  and help students with conversational English.</Typography>
+              </Card>
+              <Card class="sgLi">
+                <Typography>🇲🇽</Typography>  <Typography>University exchange student in Querétaro, Mexico. Improved grammar and ability to converse fluently in Spanish.</Typography>
+              </Card>
+              <Card class="sgLi">
+                <Typography>🇪🇸</Typography>  <Typography>Au pair in Seville, Spain. Taught English to two young girls. Learned to put Spanish in context and navigate life a new culture.</Typography>
+              </Card>
+              <Card class="sgLi">
+                <Typography>🇯🇵</Typography>  <Typography>Student of Japanese at SBCC. Able to read hiragana and katakana and continuing to learn more kanji. Learn about Japanese culture and customs.</Typography>
+              </Card>
+              <Card class="sgLi">
+                <Typography>🇮🇹</Typography>  <Typography>Learning Italian to connect with my grandparents and understand my family's Italian culture.</Typography>
+              </Card>
             </ul>
 
           </div>
